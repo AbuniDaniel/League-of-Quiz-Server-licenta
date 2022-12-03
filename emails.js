@@ -140,7 +140,7 @@ return(`
                                     <td bgcolor="#f0f2f5" align="center" style="padding: 20px 30px 30px 30px;">
                                         <table border="0" cellspacing="0" cellpadding="0">
                                             <tr>
-                                                <td align="center" style="border-radius: 6px;" bgcolor="#7f5feb"><a href="http://localhost:3000/users/${id}/verify-email?token=${emailToken}" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #f0f2f5; text-decoration: none; color: #f0f2f5; text-decoration: none; padding: 15px 25px; border-radius: 6px; border: 1px solid #7f5feb; display: inline-block;">Confirm Account</a></td>
+                                                <td align="center" style="border-radius: 6px;" bgcolor="#7f5feb"><a href="https://leagueofquiz.netlify.app/users/${id}/verify-email?token=${emailToken}" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #f0f2f5; text-decoration: none; color: #f0f2f5; text-decoration: none; padding: 15px 25px; border-radius: 6px; border: 1px solid #7f5feb; display: inline-block;">Confirm Account</a></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -155,7 +155,7 @@ return(`
                     </tr> <!-- COPY -->
                     <tr>
                         <td bgcolor="#f0f2f5" align="left" style="padding: 10px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                            <p style="margin: 0;"><a href="http://localhost:3000/users/${id}/verify-email?token=${emailToken}" target="_blank" style="color: #7f5feb;">http://localhost:3000/users/${id}/verify-email?token=${emailToken}</a></p>
+                            <p style="margin: 0;"><a href="https://leagueofquiz.netlify.app/users/${id}/verify-email?token=${emailToken}" target="_blank" style="color: #7f5feb;">https://leagueofquiz.netlify.app/users/${id}/verify-email?token=${emailToken}</a></p>
                         </td>
                     </tr>
                 </table>
@@ -310,7 +310,7 @@ const forgotPassword = (id, username, forgotToken) =>{
                                             <td bgcolor="#f0f2f5" align="center" style="padding: 20px 30px 30px 30px;">
                                                 <table border="0" cellspacing="0" cellpadding="0">
                                                     <tr>
-                                                        <td align="center" style="border-radius: 6px;" bgcolor="#7f5feb"><a href="http://localhost:3000/users/${id}/reset-pass?token=${forgotToken}" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #f0f2f5; text-decoration: none; color: #f0f2f5; text-decoration: none; padding: 15px 25px; border-radius: 6px; border: 1px solid #7f5feb; display: inline-block;">Reset your password</a></td>
+                                                        <td align="center" style="border-radius: 6px;" bgcolor="#7f5feb"><a href="https://leagueofquiz.netlify.app/users/${id}/reset-pass?token=${forgotToken}" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #f0f2f5; text-decoration: none; color: #f0f2f5; text-decoration: none; padding: 15px 25px; border-radius: 6px; border: 1px solid #7f5feb; display: inline-block;">Reset your password</a></td>
                                                     </tr>
                                                 </table>
                                             </td>
@@ -325,7 +325,7 @@ const forgotPassword = (id, username, forgotToken) =>{
                             </tr> <!-- COPY -->
                             <tr>
                                 <td bgcolor="#f0f2f5" align="left" style="padding: 10px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
-                                    <p style="margin: 0;"><a href="http://localhost:3000/users/${id}/reset-pass?token=${forgotToken}" target="_blank" style="color: #7f5feb;">http://localhost:3000/users/${id}/reset-pass?token=${forgotToken}</a></p>
+                                    <p style="margin: 0;"><a href="https://leagueofquiz.netlify.app/users/${id}/reset-pass?token=${forgotToken}" target="_blank" style="color: #7f5feb;">https://leagueofquiz.netlify.app/users/${id}/reset-pass?token=${forgotToken}</a></p>
                                 </td>
                             </tr>
                         </table>
