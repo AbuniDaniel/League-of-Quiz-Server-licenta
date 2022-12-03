@@ -32,20 +32,20 @@ app.use(cors());
 // });
 
 const db = mysql.createPool({
-  user: "root",
-  host: "containers-us-west-134.railway.app",
-  password: "7HFSnQhZiOHeXo1feOZG",
-  port : "6849",
-  database: "railway",
+  user: process.env.DB_ROOT,
+  host: process.env.DB_HOST,
+  password: process.env.DB_PASSWORD,
+  port : process.env.DB_PORT,
+  database: process.env.DB_DATABSE,
 });
 
 
 //mail sender details
 var transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: process.env.MAIL_SERVICE,
   auth: {
-    user: 'leagueofquizz@gmail.com',
-    pass: 'ajvfiamllkfbbuzm'
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS
   },
   tls:{
     rejectUnauthorized: false
@@ -846,7 +846,7 @@ app.post("/forgot-password", (req, res) => {
                 });
                 res.json({
                   type: "success",
-                  message: "Check your email for password reset link",
+                  message: "Check your email for password reset instructions",
                   description: "",
                 });
               }
