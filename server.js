@@ -869,7 +869,7 @@ app.post("/login", (req, res) => {
       res.json({
         type: "error",
         message: "Login failed",
-        description: "User doesn't exist",
+        description: "Email doesn't exist",
       });
     }
   });
@@ -1497,10 +1497,19 @@ app.post("/change-username", verifyJWT, (req, res) => {
               if (err) {
                 console.log(err);
               } else {
+                const accessToken = jwt.sign(
+                  {
+                    email: req.user.email,
+                    username: req.body.username,
+                    id: req.user.id,
+                  },
+                  "licentaSecret"
+                );
                 res.json({
                   type: "success",
                   message: "Username updated successfully",
                   description: "",
+                  token: accessToken,
                 });
               }
             }
